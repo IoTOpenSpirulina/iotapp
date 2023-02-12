@@ -87,9 +87,9 @@ export default {
     host: process.env.APP_HOST // default: localhost
   },
 
-  // serverMiddleware: {
-  //   '/api': '~/api'
-  // },
+  serverMiddleware: {
+    '/api': '~/api'
+  },
 
   /*
    ** Build configuration
