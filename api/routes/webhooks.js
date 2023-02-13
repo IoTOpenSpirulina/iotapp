@@ -295,7 +295,10 @@ function startMqttClient() {
     encoding: "utf8"
   };
 
-  client = mqtt.connect("mqtt://" + process.env.EMQX_API_HOST, options);
+  const link = "mqtt://" + process.env.EMQX_API_HOST;
+  console.log("Lin: " + link + "\n\n");
+
+  client = mqtt.connect(link, options);
 
   client.on("connect", function() {
     console.log("MQTT CONNECTION -> SUCCESS;".green);
