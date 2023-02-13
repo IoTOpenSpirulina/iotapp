@@ -296,7 +296,9 @@ function startMqttClient() {
   };
 
   const link = "mqtt://" + process.env.EMQX_API_HOST;
-  console.log("Lin: " + link + "\n\n");
+  console.log("LinK: " + link );
+  console.log("EMQX_NODE_SUPERUSER_USER: " + options.username);
+  console.log("EMQX_NODE_SUPERUSER_PASSWORD: " + options.password + "\n\n");
 
   client = mqtt.connect(link, options);
 
