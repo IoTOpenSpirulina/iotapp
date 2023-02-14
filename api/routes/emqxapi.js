@@ -37,6 +37,8 @@ async function listResources() {
 
 try {
     const url = "http://" + process.env.EMQX_API_HOST +":8085/api/v4/resources/";
+    console.log("\n\nurl: " + url);
+    console.log("\n\nauth: " + auth);
 
     const res = await axios.get(url, auth);
   
