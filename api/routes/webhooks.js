@@ -408,6 +408,6 @@ function makeid(length) {
 
 setTimeout(() => {
   startMqttClient();
-}, 30000);
+}, 3000);
 
 module.exports = router;
